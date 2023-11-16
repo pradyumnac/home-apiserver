@@ -5,6 +5,7 @@ all: build run
 
 # Build the web server binary
 build:
+	mkdir -p build
 	go build -o build/webserver main.go
 
 # Run the web server
