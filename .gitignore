@@ -8,8 +8,12 @@
 *.so
 *.dylib
 
+# build folder
+build/
+
+
 # Test binary, built with `go test -c`
-*.test
+*-test.go
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
