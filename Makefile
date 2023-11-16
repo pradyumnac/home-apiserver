@@ -1,7 +1,7 @@
 .PHONY: clean build run 
 
 
-all: build run
+all: clean build run-bg
 
 # Build the web server binary
 build:
@@ -14,7 +14,7 @@ run:
 
 # Run the web server in the background
 run-bg:
-	go run main.go &
+	go run main.go > app.log &
 
 # Kill the webserver in background
 kill-bg:
